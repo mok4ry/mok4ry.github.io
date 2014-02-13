@@ -1,6 +1,7 @@
-require.config({
-    baseUrl: 'src/js/lib',
-    paths: {
-        jquery: 'jquery-1.11.0.min' 
-    }
+require(['./requireConfig'], function (_) {
+    require(['jquery'], function ($) {
+        $(document).ready(function () {
+            require(['../app/home']);
+        });
+    });
 });
