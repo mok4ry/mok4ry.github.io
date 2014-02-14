@@ -7,7 +7,7 @@ define([
 
     var canvas = document.getElementById('header-canvas');
     canvas.width = $(document).width();
-    canvas.height = 100;
+    canvas.height = 110;
 
     var golWidth = Math.floor(canvas.width / HEADER_GOL_CELL_WIDTH),
         golHeight = Math.floor(canvas.height / HEADER_GOL_CELL_HEIGHT);
@@ -20,18 +20,12 @@ define([
     });
 
     game.addCells([
-        { x : 3, y : 3 },
-        { x : 3, y : 4 },
-        { x : 4, y : 3 },
-        { x : 4, y : 4 },
-        { x : 4, y : 5 },
-        { x : 5, y : 2 },
-        { x : 5, y : 4 },
-        { x : 5, y : 5 },
-        { x : 6, y : 2 },
-        { x : 6, y : 3 },
-        { x : 6, y : 4 },
-        { x : 7, y : 3 }
+        // LWSS Left
+        {x:3,y:4},{x:3,y:5},{x:4,y:4},{x:4,y:5},{x:4,y:6},{x:5,y:3},
+        {x:5,y:5},{x:5,y:6},{x:6,y:3},{x:6,y:4},{x:6,y:5},{x:7,y:4},
+
+        // Blinker Left
+        {x:36,y:4},{x:37,y:4},{x:38,y:4},
     ]);
     game.start();
 
