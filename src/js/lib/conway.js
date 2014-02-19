@@ -1,3 +1,18 @@
+// A library for representing an simulation of Conway's Game of Life
+// on an HTML5 canvas element.
+// 
+// Params of returned function:
+// (canvas, opts)
+//   canvas - an HTML5 canvas DOM element
+//   opts - custom options. Leave any fields blank to use default.
+//      height (height of board in cells, default 100)
+//      width (width of board in cells, default 100)
+//      toroidal (if true, board wraps around top and bottom,
+//          default true)
+//      animFramesToSkip (controls speed of simulation, higher
+//          mean slower, default 12)
+//        
+
 window.requestAnimFrame = (function(callback) {
     return window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
