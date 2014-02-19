@@ -36,6 +36,7 @@ define(function () {
             width = trueOpts.width,
             height = trueOpts.height,
             toroidal = trueOpts.toroidal,
+            animFramesToSkip = trueOpts.animFramesToSkip,
             showGrid = true; // hardcore for now until no grid looks pretty
 
         var cells = emptyCellBoard(width, height),
@@ -45,8 +46,7 @@ define(function () {
         var started = false,
             runAnimation = false;
        
-        var animFramesToSkip = 12,
-            currentAnimFrame = 0;
+        var currentAnimFrame = 0;
 
         var canvasHeight = canvas.height,
             canvasWidth = canvas.width;

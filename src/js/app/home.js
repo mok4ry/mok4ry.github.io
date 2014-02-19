@@ -16,7 +16,8 @@ define([
         width : golWidth,
         height : golHeight,
         toroidal : true,
-        showGrid : false
+        showGrid : false,
+        animFramesToSkip : 25
     });
 
     game.addCells([
